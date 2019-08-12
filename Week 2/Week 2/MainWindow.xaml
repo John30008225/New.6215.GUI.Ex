@@ -1,0 +1,41 @@
+﻿<Window x:Class="Week_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Week_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1" Height="200" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+
+            <Image Margin="0,0,0,0" 
+                   Grid.Row="1" 
+                   Source="cardano2.jpg" 
+                   Stretch="Fill"/>
+            <Image Source="Ripple.jpg" Stretch="Fill" Grid.Row="1" Grid.Column="1"/>
+
+        </Grid>
+        <Image Margin="110,99,107,219" Source="BC1.jpg" Stretch="Fill" Grid.Column="1"/>
+        <Image Grid.Column="1" Margin="221,99,0,219" Source="Ripple.jpg" Stretch="Fill"/>
+
+    </Grid>
+</Window>
